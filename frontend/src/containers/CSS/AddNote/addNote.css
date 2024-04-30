@@ -1,0 +1,105 @@
+.addNotePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../../DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.addNoteContainer {
+    margin-top: 2%;
+    width: 50%;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+.addNoteContent {
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 120px 350px;
+    grid-template-areas:
+        "addNoteHead"
+        "addNoteIp"
+    ;
+    backdrop-filter: blur(20px) saturate(200%);
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.addNoteHead {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+
+.headTxt1 {
+    font-family: customFont1;
+    letter-spacing: 3px;
+    font-size: 45px;
+    color: #2c2c2c;
+}
+
+.addNoteIp1,
+.addNoteIp2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addNoteIp1{
+    margin-bottom: 0.5rem;
+}
+
+.addNoteIp2 {
+    margin-bottom: 2rem;
+}
+
+.addNoteTitle, .addNoteContent1{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: customFont1;
+    outline: solid 2px #f75c2374;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+.addNoteTitle::placeholder,
+.addNoteContent1::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: customFont1;
+}
+
+.addNoteBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addNoteBtn1 {
+    width: 20%;
+    height: 35px;
+    border: solid 2px #f75c2374;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: customFont1;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.addNoteBtn1:hover{
+    text-decoration: none;
+    color: #f68f28;
+}

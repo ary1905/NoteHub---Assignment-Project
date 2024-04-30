@@ -1,0 +1,195 @@
+.viewNoteContainer {
+    align-self: center;
+    justify-self: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 55vh;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: customFont1;
+}
+
+@font-face {
+    font-family: customFont1;
+    src: url('../../DashboardComp/CSS-Fonts/Font1/ProtestStrike-Regular.ttf');
+}
+
+.viewNoteTitle {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.noteTitle {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.noteContent {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 6%;
+    margin-bottom: 10%;
+}
+
+.frontBtns {
+    grid-area: frontBtns;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button1,
+.button2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+.button1 {
+    background-color: rgb(24, 140, 45);
+}
+
+.button2 {
+    background-color: rgb(255, 0, 0);
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: .3s;
+}
+
+.svgIcon1 {
+    width: 42px;
+    transition-duration: .3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.svgIcon1 path {
+    fill: white;
+}
+
+.button1:hover,
+.button2:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    align-items: center;
+}
+
+.button1:hover {
+    background-color: rgb(27, 192, 57);
+}
+
+.button2:hover {
+    background-color: rgb(255, 69, 69);
+}
+
+
+.button1:hover .svgIcon1{
+    width: 80px;
+    transition-duration: .3s;
+    transform: translateY(3%);
+}
+
+.button2:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+}
+
+.button1::before,
+.button2::before {
+    position: absolute;
+    top: -20px;
+    content: "Delete";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+}
+
+.button1::before {
+    content: "Update";
+}
+
+.button2::before {
+    content: "Delete";
+}
+
+.button1:hover::before,
+.button2:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+}
+
+.button1:active{
+    outline: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updateBox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.updateBox h2 {
+    margin-bottom: 10px;
+}
+
+.updateBox input,
+.updateBox textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.updateBox button {
+    background-color: black;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: customFont1;
+    font-size: larger;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.updateBox button:hover{
+    text-decoration: none;
+    color: #f68f28;
+}

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.00748d73.css",
+    "main.js": "/static/js/main.ea3a199c.js",
+    "static/media/ProtestStrike-Regular.ttf": "/static/media/ProtestStrike-Regular.bff15d54aae47435cd1e.ttf",
+    "static/media/Logo.png": "/static/media/Logo.eececd4e59cd04a27e4c.png",
+    "static/media/viewBtn.png": "/static/media/viewBtn.fbad8d38099baac63f58.png",
+    "index.html": "/index.html",
+    "main.00748d73.css.map": "/static/css/main.00748d73.css.map",
+    "main.ea3a199c.js.map": "/static/js/main.ea3a199c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00748d73.css",
+    "static/js/main.ea3a199c.js"
+  ]
+}
